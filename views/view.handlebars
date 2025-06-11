@@ -1,0 +1,23 @@
+<div class="container" id="job-view-container">
+  <a href="/" class="btn btn-outline-success">Voltar</a>
+  <div class="row text-center">
+
+    <div class="col-md-12" id="img-container">
+      <img src="/img/company.webp" alt="empresa" />
+    </div>
+    <div class="col-md-12">
+      <h1 class="main-color">{{job.dataValues.titulo}}</h1>
+      <p class="bold">Quem estamos buscando</p>
+      <p class="job-desc">{{job.dataValues.descricao}}</p>
+      <p><span class="bold">O Salario sera de:
+        </span>R${{job.dataValues.salario}}</p>
+      <p>Para entrar em contato com a 
+        <span class="bold">Empresa {{job.dataValues.empresa}}</span>
+        e Enviar seu curriculo, segue o email:
+        <a
+          href="mail:to{{job.dataValues.email}}"
+        ></a>{{job.dataValues.email}}</p>
+
+    </div>
+  </div>
+</div>

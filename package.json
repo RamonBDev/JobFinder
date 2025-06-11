@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "bootstrap": "^5.3.6",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  },
+  "name": "jobfinder",
+  "version": "1.0.0",
+  "description": "Sistema para encontrar emprego",
+  "main": "scrip.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamonBDev/JobFinder.git"
+  },
+  "keywords": [
+    "Dev",
+    "jobs",
+    "dev",
+    "oportunity"
+  ],
+  "author": "RamonBDev <ramon.barros77@hotmail.com> (https://prti.netlify.app/) ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RamonBDev/JobFinder/issues"
+  },
+  "homepage": "https://github.com/RamonBDev/JobFinder#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

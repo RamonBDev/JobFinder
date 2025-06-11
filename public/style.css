@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*navbar*/
+#navbar {
+  border-bottom: 2px solid #067a97;
+  padding: 1.3rem;
+}
+
+/*Banner*/
+#hero-section {
+  color: aliceblue;
+  padding: 110px;
+  background-color: aliceblue;
+  border-bottom: 4px solid #067a97;
+  margin-bottom: 30px;
+  background-image: url(./img/banner1.webp);
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
+}
+#title-banner {
+  font-size: 3rem;
+  padding: 30px 0;
+}
+#subtitle-banner {
+  font-size: 1rem;
+  padding-bottom: 80px;
+}
+#search-form {
+  margin-top: 90px;
+}
+#job {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/*lista das vagas*/
+#jobs-container {
+  padding: 0 100px;
+  padding-bottom: 50px;
+}
+
+.list-group-item {
+  margin-bottom: 8px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #212529;
+  min-height: 60px;
+  padding: 15px 50px;
+}
+
+.list-group-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #212529;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: -40px;
+  top: calc(50% - 40px);
+}
+.list-group-item p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.list-group-item a {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  height: 50px;
+  line-height: 35px;
+  border-radius: 5px;
+}
+.novo .novo-label {
+  display: block;
+}
+
+.novo-label {
+  background-color: #50b6fa5d;
+  color: #4d5154;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 10px;
+  position: absolute;
+  right: 130px;
+  top: 45px;
+  display: none;
+}
+
+/*pagina add*/
+#add-form-container {
+  margin-top: 100px;
+}
+.form-group {
+  margin-top: 30px;
+}
+#form-box {
+  padding: 50px;
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 15);
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+#form-box h2 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #4d5154;
+}
+
+#form-box label {
+  font-weight: bold;
+}
+#form-box button {
+  height: 50px;
+  width: 200px;
+  display: block;
+  margin: 20px auto 0px auto;
+}
+
+/*detalhe da vaga*/
+#job-view-container {
+  margin-top: 100px;
+}
+
+#job-view-container h1 {
+  margin-bottom: 30px;
+}
+
+#img-container {
+  margin: 50px 0 30px 0;
+}
+
+#img-container img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #212529;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.job-desc {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*parte responsiva*/
+
+@media (max-width: 481px) {
+  /*navbar*/
+  #navbar {
+    text-align: right;
+  }
+
+  /*baner*/
+  #hero-section {
+    padding: 50px 50px 200px 50px;
+    min-height: 0;
+  }
+  #hero-section h1 {
+    font-size: 1.3rem;
+  }
+  #hero-section p {
+    font-size: 0.9rem;
+  }
+
+  #jobs-container {
+    padding: 20px;
+  }
+  #job-list-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  .list-group-item {
+    padding: 15px 35px;
+  }
+  .list-group-item h2 {
+    font-size: 1rem;
+    width: 80%;
+  }
+  .list-group-item img {
+    width: 65px;
+    height: 65px;
+  }
+  .novo .novo-label {
+    display: none;
+  }
+  #job-list .novo{
+    background-color: #50b6fa5d;
+  }
+}

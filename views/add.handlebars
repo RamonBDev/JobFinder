@@ -1,0 +1,70 @@
+<div class="container" id="add-form-container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Cadastre a sua vaga</h1>
+    </div>
+    <div class="col-md-12" id="form-box">
+      <h2>Preencha os dados da melhor forma possivel</h2>
+      <form action="/jobs/add" method="POST">
+        <div class="form-group">
+          <label for="titulo">Titulo da vaga:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="titulo"
+            name="titulo"
+            placeholder="Titulo"
+            required
+          />
+          <small id="titlehelp" class="form-text texte-muted">O titulo é bem
+            importante, seja claro e objetivo</small>
+        </div>
+        <div class="form-group">
+          <label for="descricao">Descricao da vaga:</label>
+          <textarea
+            class="form-control"
+            id="descricao"
+            name="descricao"
+            placeholder="Descreva a funcao do desenvolvedor"
+            required
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="empresa">Nome da empresa:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="empresa"
+            name="empresa"
+            placeholder="Empresa"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="salario">Salario:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="salario"
+            name="salario"
+            placeholder="Salario"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <input type="hidden" name="novo" value="1" />
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>

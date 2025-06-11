@@ -1,0 +1,51 @@
+<div class="container-fluid" id="hero-section">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-center mt-5" id="title-banner">Bem-vindo ao JobFinder</h1>
+          <p class="text-center" id="subtitle-banner">
+            Encontre as melhores oportunidades de emprego aqui!
+          </p>
+          <form action="/" id="search-form" method="get">
+            <div class="input-group mb-3">
+              
+              <input
+                type="text"
+                class="form-control"
+                id="job"
+                name="job"
+                placeholder="Buscar vagas..."
+              />
+              <button type="submit" class="btn btn-primary">Procurar</button>
+            </div>
+          </form>
+        </div>
+      </div>      
+    </div>
+
+
+   <main>
+    <div class="container" id="jobs-container">
+      <div class="row" id="job-listings">
+        <div class="col-md-12">
+          {{#if search}}
+            <h2 id="job-list-title">Buscando vagas que contem: {{search}}</h2>
+          {{else}}
+          <h2 id="job-list-title">Veja as vagas em Aberto</h2>
+          {{/if}}
+          
+          <ul id="job-list" class="list-group">
+            {{#each jobs}}
+            <li class="list-group-item {{#if dataValues.novo}}novo{{/if}}">
+              <img src="/img/company.webp" alt="company logo" />
+              <p>{{dataValues.empresa}}</p>
+              <h2>{{dataValues.titulo}}</h2>
+              <p>R${{dataValues.salario}}</p>
+              <span class="novo-label">Nova</span>
+              <a href="/jobs/view/{{dataValues.id}}" class="btn btn-outline-success">Ver vaga</a> 
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+      </div>
+   </main>
+    
